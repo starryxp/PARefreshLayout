@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xiaopeng.parefreshlayout.MainActivity">
+
+    <com.example.xiaopeng.parefreshlayout.PARefreshLayout
+        android:id="@+id/parefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableFooterFollowWhenLoadFinished="false"
+        app:srlEnableScrollContentWhenLoaded="true">
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新头布局" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:gravity="center"
+            android:background="@drawable/ic_launcher_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上拉加载为布局" />
+
+    </com.example.xiaopeng.parefreshlayout.PARefreshLayout>
+
+</LinearLayout>
